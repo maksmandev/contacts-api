@@ -4,7 +4,9 @@ import { ContactsService } from './contacts.service';
 import { FindId } from './dto/id.dto';
 import { CreateContactDto } from './dto/create-contact.dto';
 import { UpdateContactDto } from './dto/update-contact.dto';
+import { ApiOperation, ApiUseTags } from '@nestjs/swagger';
 
+@ApiUseTags('contacts')
 @Controller('contacts')
 export class ContactsController {
   constructor(private contactsService: ContactsService) { }
@@ -15,6 +17,7 @@ export class ContactsController {
   }
 
   @Post()
+  @ApiOperation({ title: 'Create contact' })
   async create(@Body() contact: CreateContactDto): Promise<any> {
     return this.contactsService.create(contact);
   }
@@ -29,5 +32,5 @@ export class ContactsController {
   async delete(@Param() params: FindId): Promise<any> {
     return this.contactsService.delete(params.id);
   }
-  
+
 }

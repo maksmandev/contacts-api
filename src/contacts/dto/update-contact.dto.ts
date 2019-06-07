@@ -11,7 +11,8 @@ export class UpdateContactDto {
   @IsOptional()
   @Length(2)
   lastName: string;
-
+  
+  @IsOptional()
   @IsEmail()
   email: string;
 
