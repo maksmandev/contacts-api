@@ -24,18 +24,6 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
-
-In this tutorial, you'll get introduced to Nest.js by building your first REST API CRUD application with this framework which is built on top of Node.js, Express.js and TypeScript and inspired by Angular.
-
-We'll be using TypeORM as the ORM to abtract away the differences between the various database management system. We'll be using SQLite because it doesn't need any special installation in but you can very much use any database supported by TypeORM like MySQL or Oracle.
-
-> Read [Nest.js Tutorial: Build your First REST API CRUD App with TypeORM](https://www.techiediaries.com/nestjs-tutorial-rest-api-crud)
-
-```bash
-$ git clone https://github.com/techiediaries/nestjs-crud-rest-api.git
-```
-
 ## Installation
 
 ```bash
